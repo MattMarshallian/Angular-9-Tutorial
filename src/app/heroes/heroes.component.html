@@ -14,8 +14,10 @@
     </li>
 </ul> -->
 
-<table class="heroes">
-    <tr *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
+<table border="1" width="100%">
+    <col style="width:40%">
+	<col style="width:60%">
+    <tr class="tr" *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
         <td>
             <span class="badge">{{hero.id}}</span> {{hero.name}}
         </td>
